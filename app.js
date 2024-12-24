@@ -69,7 +69,7 @@ app.delete('/listings/:id',async (req,res)=>{
     let listing=await Listing.findByIdAndDelete(id);
     res.redirect("/listings")
 })
-
+//previous code
 // app.get('/',(req,res)=>{
 //     res.send("hey ,im root!");
 // });
